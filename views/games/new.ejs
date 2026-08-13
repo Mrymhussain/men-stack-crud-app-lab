@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <title>Add a Game</title>
+</head>
+
+<body>
+
+  <a href="/games">Back to Games</a>
+
+  <h1>Add a Game to Your List!</h1>
+
+  <form action="/games" method="POST">
+
+    <label for="homeTeam">Home Team</label>
+    <select id="homeTeam" name="homeTeam">
+      <option value="Boston Celtics">Boston Celtics</option>
+      <option value="Los Angeles Lakers">Los Angeles Lakers</option>
+      <option value="Golden State Warriors">Golden State Warriors</option>
+      <option value="Miami Heat">Miami Heat</option>
+      <option value="Chicago Bulls">Chicago Bulls</option>
+      <option value="New York Knicks">New York Knicks</option>
+    </select>
+
+    <label for="awayTeam">Away Team</label>
+    <select id="awayTeam" name="awayTeam">
+      <option value="Boston Celtics">Boston Celtics</option>
+      <option value="Los Angeles Lakers">Los Angeles Lakers</option>
+      <option value="Golden State Warriors">Golden State Warriors</option>
+      <option value="Miami Heat">Miami Heat</option>
+      <option value="Chicago Bulls">Chicago Bulls</option>
+      <option value="New York Knicks">New York Knicks</option>
+    </select>
+
+    <label for="date">Date</label>
+    <select id="date" name="date">
+      <option value="October 21, 2026">October 21, 2026</option>
+      <option value="October 22, 2026">October 22, 2026</option>
+      <option value="October 23, 2026">October 23, 2026</option>
+      <option value="October 24, 2026">October 24, 2026</option>
+      <option value="October 25, 2026">October 25, 2026</option>
+      <option value="October 26, 2026">October 26, 2026</option>
+      <option value="October 27, 2026">October 27, 2026</option>
+      <option value="October 28, 2026">October 28, 2026</option>
+    </select>
+
+    <label for="time">Time</label>
+    <select id="time" name="time">
+      <option value="7:00 PM">7:00 PM</option>
+      <option value="7:30 PM">7:30 PM</option>
+      <option value="8:00 PM">8:00 PM</option>
+      <option value="8:30 PM">8:30 PM</option>
+      <option value="9:00 PM">9:00 PM</option>
+      <option value="10:00 PM">10:00 PM</option>
+      <option value="10:30 PM">10:30 PM</option>
+    </select>
+
+    <label for="arena">Arena</label>
+    <select id="arena" name="arena">
+      <option value="TD Garden">TD Garden</option>
+      <option value="Crypto.com Arena">Crypto.com Arena</option>
+      <option value="Chase Center">Chase Center</option>
+      <option value="Kaseya Center">Kaseya Center</option>
+      <option value="United Center">United Center</option>
+      <option value="Madison Square Garden">Madison Square Garden</option>
+    </select>
+
+    <label for="importance">Importance</label>
+    <select id="importance" name="importance">
+      <option value="High">High</option>
+      <option value="Medium">Medium</option>
+      <option value="Low">Low</option>
+    </select>
+
+    <label for="notes">Notes</label>
+    <select id="notes" name="notes">
+      <option value="Big game">Big game</option>
+      <option value="Rivalry game">Rivalry game</option>
+      <option value="Regular game">Regular game</option>
+      <option value="Important game">Important game</option>
+    </select>
+
+    <button type="submit">Add Game</button>
+
+  </form>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <title><%= game.homeTeam %> vs <%= game.awayTeam %></title>
+</head>
+
+<body>
+    <a href="/games">Back to Games</a>
+
+    <h1><%= game.homeTeam %> vs <%= game.awayTeam %></h1>
+  <div class="game-details">
+    <p><strong>Date:</strong> <%= game.date %></p>
+
+    <p><strong>Time:</strong> <%= game.time %></p>
+
+    <p><strong>Arena:</strong> <%= game.arena %></p>
+
+    <p><strong>Importance:</strong> <%= game.importance %></p>
+
+    <p><strong>Notes:</strong> <%= game.notes %></p>
+  </div>
+
+  <div class="game-actions">
+
+    <form
+      class="delete-form"
+      action="/games/<%= game._id %>?_method=DELETE"
+      method="POST"
+    >
+      <button class="delete-button" type="submit">
+        Delete Game
+      </button>
+    </form>
+
+    <a
+      class="edit-link"
+      href="/games/<%= game._id %>/edit"
+    >
+      Edit Game
+    </a>
+
+  </div>
+
+  <a class="games-index-link" href="/games">
+    <div class="index-link-text">Back to Games</div>
+  </a>
+
+</body>
+
+</html>
