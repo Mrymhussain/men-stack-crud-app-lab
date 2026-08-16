@@ -1,0 +1,481 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 45px 7%;
+  font-family: "DM Sans", sans-serif;
+  background-color: #0d2340;
+  color: white;
+}
+
+h1 {
+  margin: 0 0 30px;
+  color: white;
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+p {
+  color: #c6d3e1;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* HOME PAGE */
+
+.home-page {
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #0d2340;
+}
+
+.home-content {
+  flex: 1;
+  width: 100%;
+  padding: 60px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.home-text {
+  width: 60%;
+}
+
+.home-text h1 {
+  max-width: 800px;
+  margin: 0;
+  font-size: 4.5rem;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.home-text h1 span {
+  display: block;
+}
+
+.home-text p {
+  max-width: 520px;
+  margin: 30px 0;
+  font-size: 1.05rem;
+}
+
+/* HOME BUTTON */
+
+.games-index-link {
+  display: inline-block;
+}
+
+.index-link-text {
+  display: inline-block;
+  padding: 14px 24px;
+  background-color: #1d4f91;
+  color: white;
+  border-radius: 7px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.index-link-text:hover {
+  background-color: #2864ad;
+}
+
+/* NBA LOGO */
+
+.logo-section {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nba-logo {
+  width: 280px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: transparent;
+}
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  padding: 18px;
+  text-align: center;
+  color: #8ca0b7;
+  font-size: 0.75rem;
+  border-top: 1px solid #29415f;
+}
+
+/* GAMES INDEX */
+
+.index-header-div {
+  width: 100%;
+  margin-bottom: 35px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid #29415f;
+}
+
+.index-header-div h1 {
+  margin: 0;
+}
+
+/* ADD GAME */
+
+.add-game {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #1d4f91;
+  color: white;
+  border-radius: 7px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.add-game:hover {
+  background-color: #2864ad;
+}
+
+/* GAME LIST */
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* GAME CARDS */
+
+.game-cards {
+  min-height: 160px;
+  padding: 30px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #16395f;
+  color: white;
+  border: 1px solid #31577f;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.game-cards:hover {
+  background-color: #1b4775;
+  border-color: #4d739d;
+}
+
+/* FORMS */
+
+form {
+  width: 500px;
+  max-width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: #16395f;
+  border: 1px solid #31577f;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+label {
+  margin: 15px 0 6px;
+  color: #c4d1df;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+select,
+input,
+textarea {
+  width: 100%;
+  padding: 11px 12px;
+  background-color: #0d2948;
+  color: white;
+  border: 1px solid #45698f;
+  border-radius: 6px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.95rem;
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #7fa6d2;
+}
+
+/* BUTTONS */
+
+button {
+  margin-top: 22px;
+  padding: 12px 20px;
+  background-color: #1d4f91;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2864ad;
+}
+
+/* GAME DETAILS */
+
+.game-details {
+  width: 650px;
+  max-width: 100%;
+  padding: 28px;
+  background-color: #16395f;
+  border: 1px solid #31577f;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.game-details p {
+  margin: 0;
+  padding: 13px 0;
+  color: #d1dce8;
+  border-bottom: 1px solid #31577f;
+}
+
+.game-details p:last-child {
+  border-bottom: none;
+}
+
+/* ACTION BUTTONS */
+
+.game-actions {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.delete-form {
+  width: auto;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.delete-button {
+  margin: 0;
+  padding: 12px 20px;
+  background-color: #b52b42;
+}
+
+.delete-button:hover {
+  background-color: #cd3750;
+}
+
+.edit-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 43px;
+  padding: 12px 20px;
+  background-color: #1d4f91;
+  color: white;
+  border-radius: 7px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.edit-link:hover {
+  background-color: #2864ad;
+}
+
+/* BACK TO GAMES BUTTON */
+
+.game-actions + .games-index-link {
+  display: block;
+  width: fit-content;
+  margin-top: 28px;
+}
+
+/* TOP BACK LINKS */
+
+body > a:first-child {
+  display: inline-block;
+  margin-bottom: 25px;
+  color: #9eb3ca;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+body > a:first-child:hover {
+  color: white;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  body {
+    padding: 40px 5%;
+  }
+
+  .home-page {
+    padding: 0;
+  }
+
+  .home-content {
+    padding: 55px 7%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .home-text,
+  .logo-section {
+    width: 100%;
+  }
+
+  .home-text h1 {
+    font-size: 3.5rem;
+  }
+
+  .home-text p {
+    margin: 25px auto;
+  }
+
+  .nba-logo {
+    width: 210px;
+  }
+
+  ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  body {
+    padding: 30px 18px;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  .home-page {
+    padding: 0;
+  }
+
+  .home-content {
+    padding: 45px 20px;
+    gap: 30px;
+  }
+
+  .home-text h1 {
+    font-size: 2.6rem;
+    line-height: 1.05;
+  }
+
+  .home-text p {
+    font-size: 0.95rem;
+  }
+
+  .nba-logo {
+    width: 145px;
+  }
+
+  .index-header-div {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .add-game {
+    width: 100%;
+    text-align: center;
+  }
+
+  ul {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .game-cards {
+    width: 100%;
+    min-height: 140px;
+  }
+
+  form {
+    width: 100%;
+    padding: 22px 18px;
+  }
+
+  select,
+  input,
+  textarea {
+    font-size: 16px;
+  }
+
+  .game-details {
+    width: 100%;
+    padding: 22px 18px;
+  }
+
+  .game-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .delete-form {
+    width: 100%;
+  }
+
+  .delete-button,
+  .edit-link {
+    width: 100%;
+    text-align: center;
+  }
+
+  .game-actions + .games-index-link {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .game-actions + .games-index-link .index-link-text {
+    width: 100%;
+    text-align: center;
+  }
+}
